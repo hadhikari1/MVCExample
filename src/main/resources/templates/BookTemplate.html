@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+</head>
+<body>
+<header>
+   <h1>Welcome to BOOK</h1>
+</header>
+<main>
+    <h1 th:text="${book.title}">Title</h1>
+    <h2 th:text="${book.author}">I wrote this book</h2>
+    <p th:text="'The ISBN is: ' + ${book.isbn}">ISBN is: </p>
+    <p th:text="${book.description}">Description</p>
+</main>
+
+
+
+<!--<section class = "book-details">-->
+<!--    <h1>Sample Book Title</h1>-->
+<!--    <h2>Mel Smith</h2>-->
+<!--    <p>ISBN Number: 43343-43455</p>-->
+<!--    <p>Description of this book.</p>-->
+<!--    <a href="./book-collection.html">Back to all books</a>-->
+<!--</section>-->
+</body>
+</html>
